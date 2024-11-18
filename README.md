@@ -48,7 +48,54 @@ Matplotlib: To generate the line graphs for each distribution.
 HTML: For structuring the web page.
 CSS: Custom styles for visual appeal, utilizing a color palette and font for a modern look.
 Bootstrap: Used for responsive design, making the web app adaptable across different screen sizes.
-JavaScript (Flask): For handling requests and communication between the frontend and backend.
 
-3- Additional Libraries
+**Additional Libraries**
 Flask: A lightweight web framework for Python used to build the backend and handle routing.
+Installation and Setup
+
+**Prerequisites**
+Make sure you have the following installed:
+Python 3.x
+pip (Python package installer)
+
+**Installation Steps**
+1- Clone the repository:
+git clone https://github.com/your-username/pdf-visualizer.git
+cd pdf-visualizer
+
+2- Install the required Python libraries:
+pip install -r requirements.txt
+
+**Running the Application**
+1- Start the Flask server:
+python app.py
+
+2- Open a web browser and go to http://127.0.0.1:5000 to access the PDF Visualizer app.
+
+**Usage Instructions**
+Select a probability distribution from the dropdown menu on the homepage.
+Input specific parameters for the chosen distribution.
+Click the Generate Graph button to display the graph and data table for the selected distribution.
+
+**Project Structure**
+
+pdf-visualizer/
+├── app.py                    # Main Flask application
+├── requirements.txt          # Dependencies for the project
+├── templates/
+│   └── index.html            # HTML file for the frontend
+├── static/
+│   ├── styles.css            # CSS file for styling
+│   └── plots/                # Folder to save generated plot images
+└── pdf_functions/            # Folder containing Python files for each PDF function
+    ├── binomial.py
+    ├── poisson.py
+    ├── geometric.py
+    ├── negative_binomial.py
+    ├── hypergeometric.py
+    ├── normal.py
+    ├── exponential.py
+    ├── uniform.py
+    ├── gamma.py
+    └── beta.py
+
